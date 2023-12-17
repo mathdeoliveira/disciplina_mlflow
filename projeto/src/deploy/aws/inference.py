@@ -7,7 +7,7 @@ import pandas as pd
 app_name = "prob-loan-sagemaker"
 region = 'us-east-1'
 
-df_test = pd.read_csv('/home/mathdeoliveira/repos/disciplina_mlflow/projeto/data/raw/test.csv')
+df_test = pd.read_csv('CAMINHO_DADOS_DE_TESTE')
 
 
 def query(input_json):
