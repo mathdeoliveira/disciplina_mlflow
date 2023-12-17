@@ -7,7 +7,7 @@ from azure.identity import DefaultAzureCredential
 workspace_name = "prob-loan-ws"
 workspace_location = "East US"
 resource_group = "azure-mlops"
-subscription_id = "8dc9ecfb-26e4-4678-b601-f4b8cbc96978"
+subscription_id = "SUBSCRIPTION_ID"
 endpoint_name = "prob-loan-endpoint"
 
 ml_client = MLClient(DefaultAzureCredential(),
@@ -15,7 +15,7 @@ ml_client = MLClient(DefaultAzureCredential(),
                      resource_group,
                      workspace_name)
 
-df_test = pd.read_csv('/home/mathdeoliveira/repos/disciplina_mlflow/projeto/data/raw/test.csv')
+df_test = pd.read_csv('CAMINHO_DADOS_DE_TESTE')
 data = {"input_data": df_test.iloc[[0]].to_dict(orient='split')}
 print(data)
 
