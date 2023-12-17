@@ -1,11 +1,11 @@
 from mlflow.deployments import get_deploy_client
 
 app_name = "prob-loan-sagemaker"
-arn = "arn:aws:iam::452416756053:role/aws_sagemaker_for_deploy" # ROLE
-image_ecr_uri = "452416756053.dkr.ecr.us-east-1.amazonaws.com/mlflow-pyfunc:2.8.1" # ECR
+arn = "ARN_CRIADO" # ROLE
+image_ecr_uri = "URI_IMAGEM_DOCKER" # ECR
 region = "us-east-1" 
 
-model_uri = "/home/mathdeoliveira/repos/disciplina_mlflow/projeto/mlartifacts/1/ea4e68e210c34563b272a1819c36beab/artifacts/modelo.joblib"
+model_uri = "CAMINHO_MODELO_TREINADO_MLFLOW"
 
 
 config = dict(
